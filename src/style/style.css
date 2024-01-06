@@ -187,7 +187,7 @@ section.home .box-left-home p {
 }
 
 section.home .img-home {
-    background-image: url(src/images/man_and_circle.png);
+    background-image: url(../images/man_and_circle.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -416,6 +416,8 @@ section.contato> .container {
 
 .contato .btn-submit {
     width: 50%;
+    background-color: var(--second-color);
+    color: var(--color-white);
 }
 
 .contato .box-right-contato {
@@ -442,6 +444,7 @@ section.contato> .container {
 .contato .email-zap span {
     display: flex;
     align-items: center;
+    text-decoration: none;
     color: var(--color-white);
     font-size: var(--font-size-menu);
     gap: 4px;
@@ -547,7 +550,7 @@ footer {
 
 
     /* MEDIA QUERY HEADER */
-    header .logo a, span {
+    header .logo a, header .logo a span {
         font-size: 2.1rem;
     }
 
