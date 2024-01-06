@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev - Sérgio Toledo</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        body {
+            
+            display: flex;
+            justify-content: center;
+            background-color: #1E1C2A;
+        }
+        .container {
+            width: 1440px;
+        }
+        .content {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .box h1, p {
+            color: white;
+        }
+
+        .box h1 {
+            font-size: 64px;
+            font-weight: 800;
+        }
+        .box a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #ffffff;
+            color: crimson;
+            font-size: 20px;
+            font-weight: 500;
+            width: 180px;
+            height: 50px;
+            border-radius: 20px; 
+            text-decoration: none;
+            transform: scale(1);
+            transition: .2s;
+        }
+        
+        .box a:hover {
+            transform: scale(1.02);
+            transition: .2s;
+
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <article class="content">
+            <div class="box">
+                <h1>Obrigado pelo contato!</h1>
+                <p>Entraremos em contato assim que possível.</p>
+                <a href="teste.html">Home</a>
+            </div>
+        </article>
+    </main>
+</body>
+</html>
