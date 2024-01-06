@@ -174,10 +174,52 @@ section.home .container-typing span {
     font-size: 1.5rem; 
 }
 
-.typing {
+.home .container-typing .typing {
     color: var(--second-color);
     font-weight: 800;
     font-size: var(--font-size-logo);
+    position: relative;
+}
+
+
+.home .typing::before {
+    content: '';
+    animation: text 10s infinite;
+}
+
+.home .typing::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: calc(100% + 14px);
+    border-left: 2px solid crimson;
+    right: -15px;
+    animation: cursor .8s infinite, typing_text 25s steps(15) infinite;
+    background-color: #1E1C2A;
+}
+
+@keyframes text {
+    0%, 50% {
+        content: 'Developer';
+    }
+    51%, 100% {
+        content: 'Analista de dados';
+    }
+}
+
+@keyframes cursor {
+    0% {
+        border-left: 2px solid #1E1C2A;
+    }
+}
+
+@keyframes typing_text {
+    10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95% {
+        width: 0;
+    }
+    5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85% {
+        width: calc(100% + 14px);
+    }
 }
 
 section.home .box-left-home p {
@@ -555,6 +597,10 @@ footer {
     }
 
     /* MEDIA QUERY HOME */
+    section.home .container-typing {
+        flex-direction: column;
+    }
+
     section.home .img-home {
         min-width: 220px;
         width: 100%;
@@ -580,7 +626,6 @@ footer {
     }
     .contato .box-right-contato {
         height: 20rem;
-
     }
 
     /* .contato .btn-submit {
