@@ -94,7 +94,7 @@ section .container {
     font-size: var(--font-size-menu);
     width: 10em;
     border-radius: 20px;
-    height: 2.3rem;
+    height: 3rem;
 }
 
 .btn a:first-child {
@@ -107,7 +107,7 @@ section .container {
     color: var(--second-color);
 }
 
-.btn-light:nth-child(2) a {
+.btn-light:last-child a {
     border: 1px solid crimson;
 }
 
@@ -228,6 +228,11 @@ section.home .box-left-home p {
     margin-top: 20px;
 }
 
+section.home .desc-two-home {
+    display: none;
+}
+
+
 section.home .img-home {
     background-image: url(../images/man_and_circle.png);
     background-repeat: no-repeat;
@@ -258,7 +263,6 @@ section.home .btn a:nth-child(2) {
     background-color: var(--color-white);
     color: var(--second-color);
 }
-
 
 /* SOBRE */
 section.sobre{
@@ -323,13 +327,12 @@ section.skills{
     justify-content: center;
     align-items: center;
     align-content: center;
-    flex-wrap: wrap;
-    gap: 60px;
+    gap: 30px;
     height: 100%;
 }
 
 .skills .box-left-skills {
-    max-width: 700px;
+    max-width: 680px;
     width: 100%;
 }
 
@@ -337,8 +340,12 @@ section.skills{
     font-size: var(--font-size-desc);
 }
 
+.skills .desc-two-skills {
+    display: none;
+}
+
 .skills .box-right-skills {
-    max-width: 700px;
+    max-width: 680px;
     width: 100%;
 }
 
@@ -503,7 +510,7 @@ section.contato> .container {
     height: 20.5px;
     background-color: green;
     border-radius: 50%;
-
+    
 }
 
 .contato .redes-sociais p {
@@ -555,6 +562,17 @@ footer {
     color: #cccccc9d;
 }
 
+/* REVEAL-HOME */
+.title-section,
+.reveal-box-left-home, 
+.reveal-img-home,
+.reveal-img-sobre,
+.reveal-box-right-sobre,
+.reveal-box-right-skills,
+.reveal-container-form,
+.reveal-box-right-contato {
+    visibility: hidden;
+}
 
 @media screen and (max-width: 768px) {
     
@@ -609,6 +627,9 @@ footer {
 
 
     /* MEDIA QUERY SOBRE */
+    .sobre .content {
+        gap: 35px;
+    }
     
     /* MEDIA QUERY PROJETOS */
     
@@ -626,6 +647,7 @@ footer {
     }
     .contato .box-right-contato {
         height: 20rem;
+        background-color: transparent;
     }
 
     /* .contato .btn-submit {
@@ -639,7 +661,7 @@ footer {
     
     /* SOBRE */
     .sobre .content {
-        gap: 50px;
+        gap: 35px;
     }
 
     /* SKILLS */
@@ -665,7 +687,43 @@ footer {
     section.home .box-left-home span {
         font-size: 2rem;
     }
+    
+    section.home .container-typing .typing {
+        font-size: 2rem;
 
+    }
 
+    section.home .desc-one-home {
+        display: none;
+    }
+
+    section.home .desc-two-home {
+        display: block;
+    }
+
+    /* SOBRE */
+    .sobre .content {
+        gap: 20px;
+    }
+    
+    /* SKILLS */
+    .skills .box-level {
+        margin-bottom: .5rem;
+    }
+
+    .skills .desc-one-skills {
+        display: none;
+    }
+    .skills .desc-two-skills {
+        display: block;
+    }
+
+    /* CONTATO */
+    .contato .email-zap span {
+        font-size: 1rem;
+    }
+    
+    .contato .btn-submit {
+        width: 100%;
+    }
 }
-

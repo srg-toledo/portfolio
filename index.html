@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
 
     <!-- LIBS 👇 -->
+    <script src="https://unpkg.com/scrollreveal" defer></script>
 
     <!-- CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> 
@@ -17,6 +18,7 @@
     <!-- FILES -->
     <link rel="stylesheet" href="src/style/style.css">
     <script src="src/js/index.js" defer></script>
+    <script src="./src/js/reveal.js" defer></script>
 
 
     <title>Dev Sérgio Toledo</title>
@@ -44,7 +46,7 @@
         <section id="home" class="home">
             <article class="container">
 
-                <div class="box-left-home">
+                <div class="box-left-home reveal-box-left-home">
                     <span>Olá,</span>
 
                     <div class="container-typing">
@@ -52,14 +54,16 @@
                         <h1 class="typing"></h1>
                     </div>
 
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem architecto molestiae corrupti eveniet sed corporis eligendi alias, totam amet vitae temporibus libero voluptatibus exercitationem nobis officiis odit animi doloribus expedita aspernatur placeat vero explicabo veritatis quidem nostrum. Accusantium quas vitae possimus. Consequuntur non quod eius harum magni et nihil eligendi omnis nostrum?</p>
+                    <p class="desc-one-home">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem architecto molestiae corrupti eveniet sed corporis eligendi alias, totam amet vitae temporibus libero voluptatibus exercitationem nobis officiis odit animi doloribus expedita aspernatur placeat vero explicabo veritatis quidem nostrum.</p>
+
+                    <p class="desc-two-home">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui alias dolores dicta earum eos asperiores iste eius, error sed reprehenderit!</p>
 
                     <div class="btn">
                         <a href="./src/download/CV/Currículo Dev Sérgio Toledo.pdf" download="">Dwonload CV</a>
                         <a href="#contato">Contato</a>
                     </div>
                 </div>
-                <div class="img-home"></div>
+                <div class="img-home reveal-img-home"></div>
             </article>
         </section>
         
@@ -71,9 +75,9 @@
                 </div>
 
                 <div class="content">
-                    <img class="img-sobre" src="./src/images/url2img_657ce07871638.jpeg" alt="">
+                    <img class="img-sobre reveal-img-sobre" src="./src/images/url2img_657ce07871638.jpeg" alt="">
                     
-                    <div class="box-right-sobre">
+                    <div class="box-right-sobre reveal-box-right-sobre">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At sint aut fuga esse omnis nihil eos corrupti explicabo numquam quae labore recusandae corporis, placeat optio non eum in delectus amet ratione quod cupiditate! Harum sapiente vitae, sit impedit nisi id eum commodi ad possimus natus dolore facilis dolorum est consequuntur.</p>
 
                         <div class="btn btn-light">
@@ -110,18 +114,21 @@
                 </div>
 
                 <div class="content">
-                    <div class="box-left-skills">
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio a animi quod error delectus illo nisi magnam nemo ut id eum, laboriosam atque est odit qui doloremque, enim ducimus laborum ipsum. Cupiditate, corrupti quis. Enim consectetur quis labore ex veritatis cum excepturi repellat unde officia alias minus, ab, dicta facilis?</p>
+                    <div class="box-left-skills reveal-box-left-skills">
+                        <p class="desc-one-skills">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio a animi quod error delectus illo nisi magnam nemo ut id eum, laboriosam atque est odit qui doloremque, enim ducimus laborum ipsum. Cupiditate, corrupti quis. Enim consectetur quis labore ex veritatis cum excepturi repellat unde officia alias minus, ab, dicta facilis?</p>
+
+                        <p class="desc-two-skills">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui alias dolores dicta earum eos asperiores iste eius, error sed reprehenderit!</p>
+                        
                         <div class="btn btn-light">
                             <a href="./src/download/CV/Currículo Dev Sérgio Toledo.pdf" download="">Dwonload CV</a>
                             <a href="#contato">Contato</a>
                         </div>
                     </div>
 
-                    <div class="box-right-skills">
+                    <div class="box-right-skills reveal-box-right-skills">
                         <h3 class="skills-name">Inglês</h3>
                         <div class="box-level">
-                            <div class="bg-nivel-skill nivel-skill-1"></div>
+                            <div class="bg-nivel-skill nivel-skill-1 reveal-nivel-skill"></div>
                         </div>
                         <h3 class="skills-name">Python</h3>
                         <div class="box-level">
@@ -158,7 +165,7 @@
                 </div>
         
                 <div class="content">
-                    <form class="container-form" action="https://api.staticforms.xyz/submit" method="post">
+                    <form class="container-form reveal-container-form" action="https://api.staticforms.xyz/submit" method="post">
                         <div class="header-form">
                             <input class="input-name" id="nome" type="text" name="name" placeholder="Nome" required autocomplete="off">
                             <input class="input-email" id="email" type="email" name="email" placeholder="E-mail" required autocomplete="off">
@@ -179,7 +186,7 @@
                         <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/obrigado.html">
                     </form>
 
-                    <div class="box-right-contato">
+                    <div class="box-right-contato reveal-box-right-contato">
 
                         <div class="email-zap">
                             <span><i class="fa-regular fa-envelope"></i>E-mail: srg.toledo@hotmail.com</span>
