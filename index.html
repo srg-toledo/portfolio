@@ -30,19 +30,26 @@
                 <a href="">Sérgio <span>Toledo</span></a>
             </div>
 
+            <button class="icon-hamburger btn-menu-mobile" onclick="openSidebar()">
+                <i class="fa-solid fa-bars"></i>
+            </button>
             <nav class="nav-bar">
+       
                 <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="projetos">Projetos</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#contato">Contato</a></li>
+                    <button class="icon-xclose btn-menu-mobile" onclick="openSidebar()">
+                        <i class="fa-solid fa-x"></i>
+                    </button>
+                    <li><a href="#home" onclick="closeSidebar()">Home</a></li>
+                    <li><a href="#sobre" onclick="closeSidebar()">Sobre</a></li>
+                    <li><a href="#projetos" onclick="closeSidebar()">Projetos</a></li>
+                    <li><a href="#skills" onclick="closeSidebar()">Skills</a></li>
+                    <li><a href="#contato" onclick="closeSidebar()">Contato</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <main>
+    <main tabindex="0" onclick="closeSidebar()">
         <section id="home" class="home">
             <article class="container">
 

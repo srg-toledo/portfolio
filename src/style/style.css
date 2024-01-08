@@ -114,6 +114,13 @@ section .container {
 
 
 /* HEADER */
+header {
+    position: fixed;
+    z-index: 100;
+    width: 100vw;
+    background-color: var(--bg-color);
+    box-shadow: 1px 1px 4px  #131313;
+}
 
 header .container {
     display: flex;
@@ -130,6 +137,17 @@ header .logo a, header .logo a span {
 
 header .logo a span {
     color: var(--second-color);
+}
+
+header .btn-menu-mobile {
+    display: none;
+    border: none;
+    background-color: transparent;
+}
+
+header .btn-menu-mobile i {
+    color: var(--color-white);
+    font-size: 1.7rem;
 }
 
 header .nav-bar ul {
@@ -577,10 +595,43 @@ footer {
 @media screen and (max-width: 768px) {
     
     /* MEDIA QUERY HEADER */
+    header .container:nth-child(2) {
+        align-content: end;
+    }
+
     header .nav-bar {
         display: none;
     }
     
+    header .nav-bar ul {
+        position: absolute;
+        flex-direction: column;
+        top: 0;
+        right: -100%;
+        background-color: var(--bg-color);
+        width: 35vw;
+        height: 100vh;
+        padding: 1.6rem;
+        animation-duration: .5s;
+        z-index: 20;
+    }
+
+    @keyframes show-bar {
+        from {right: -100%;}
+        top {right: 0;}
+    }
+    
+    header .nav-bar a {
+        padding: 15px 83% 4px 0;
+    }
+
+    header .btn-menu-mobile {
+        display: block;
+        text-align: end;
+        height: 36px;
+        padding-right: 20px;
+    }
+
     /* MEDIA QUERY HOME */
     section.home .container {
         flex-direction: column-reverse;
